@@ -1,0 +1,10 @@
+# 默认忽略的文件
+/shelf/
+/workspace.xml
+/.gitignore
+/misc.xml
+/modules.xml
+/inspectionProfiles/profiles_settings.xml
+/inspectionProfiles/Project_Default.xml
+/RunBuildAAB.iml
+/vcs.xml
