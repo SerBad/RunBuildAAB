@@ -9,9 +9,9 @@ import argparse
 class BuildOptions:
     def __init__(self):
         self.parser = argparse.ArgumentParser(description="自动打包文件")
-        self.parser.add_argument("--path", type=str, help="aab的路径")
-        self.parser.add_argument("--password", type=str, help="你自己的密码")
-        self.parser.add_argument("--jks_path", type=str, help="你自己jks的地址")
+        self.parser.add_argument("--path", type=str, required=True, help="aab的路径")
+        self.parser.add_argument("--password", type=str, required=True, help="你自己的密码")
+        self.parser.add_argument("--jks_path", type=str, required=True, help="你自己jks的地址")
 
     def parse(self):
         return self.parser.parse_args()
