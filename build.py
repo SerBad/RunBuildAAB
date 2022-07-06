@@ -29,6 +29,7 @@ def query_by_java_jar(jar_path, param):
 
 # 用来执行jarsigner命令的
 def query_by_jarsigner(param):
+    # jarsigner 是来自于java的，确保自己本地的java环境正确即可
     execute = "jarsigner {}".format(param)
     print(execute)
     # 这个是为了自动输入密码
