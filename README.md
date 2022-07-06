@@ -77,7 +77,7 @@ if __name__ == '__main__':
     zFile.close()
 ```
 
-其中``bundletool-all-1.9.1.jar``是来自于https://github.com/google/bundletool/releases，可以替换成你自己需要的jar
+其中``bundletool-all-1.9.1.jar``是来自于https://github.com/google/bundletool/releases 可以替换成你自己需要的jar
 
 使用方法是：
 
