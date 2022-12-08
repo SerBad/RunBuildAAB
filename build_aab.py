@@ -86,8 +86,9 @@ if __name__ == '__main__':
     for fileM in zFile.namelist():
         zFile.extract(fileM, zip_apk_path)
 
-    rename = zip_apk_path + os.sep + time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime()) + '_' + apks_path.replace(
+    rename = zip_apk_path + os.sep + time.strftime("%Y_%m_%d_%H_%M_%S", time.localtime()) + '_' + os.path.basename(apks_path).replace(
         '.apks', '.apk')
-    os.renames(zip_apk_path + '/universal.apk', rename)
+
+    os.renames(zip_apk_path + os.sep + 'universal.apk', rename)
     print("output apk", rename)
     zFile.close()
